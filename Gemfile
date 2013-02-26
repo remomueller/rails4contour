@@ -41,3 +41,8 @@ gem 'jbuilder', '~> 1.0.1'
 
 # To use debugger
 # gem 'debugger'
+
+group :test do
+  gem 'turn',               '~> 0.9.6'
+  gem 'simplecov',          '~> 0.7.1',           require: false
+end
