@@ -1,4 +1,4 @@
-BlankRailsProject::Application.routes.draw do
+Rails4Contour::Application.routes.draw do
   resources :items
 
   get "welcome/index"

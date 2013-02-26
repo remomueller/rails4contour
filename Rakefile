@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-BlankRailsProject::Application.load_tasks
+Rails4Contour::Application.load_tasks
