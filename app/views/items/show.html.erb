@@ -1,0 +1,24 @@
+<% @title = "Item: #{@item.name}" %>
+<div class="page-header">
+  <h1>
+    <%= @title %>
+    <%= link_to "Edit Item", edit_item_path(@item), class: 'btn btn-mini' %>
+    <%= link_to "Delete Item", @item, method: :delete, class: 'btn btn-mini btn-danger', data: { confirm: "Are you sure you want to delete Item #{@item.name}?" } %>
+    <%= link_to "View Items", items_path, class: 'btn btn-mini' %>
+  </h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Name</dt>
+  <dd><%= @item.name %></dd>
+
+  <dt>Description</dt>
+  <dd><%= simple_format @item.description %></dd>
+
+  <dt>User</dt>
+  <dd><%= link_to @item.user.name, @item.user if @item.user %></dd>
+
+  <dt>Bought Date</dt>
+  <dd><%= @item.bought_date %></dd>
+
+</dl>
