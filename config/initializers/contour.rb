@@ -37,6 +37,9 @@ Contour.setup do |config|
     },
     {
       name: 'Items', display: 'signed_in', path: 'items_path', position: 'left'
+    },
+    {
+      name: 'About', display: 'always', path: 'about_path', position: 'left'
     }
   ]
 

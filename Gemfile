@@ -7,6 +7,7 @@ gem 'contour', '2.0.0.beta.1'
 gem 'devise', '~> 2.2.3', github: 'plataformatec/devise', branch: 'rails4'
 
 gem 'kaminari', '~> 0.14.1'
+gem 'ruby-ntlm-namespace',  '~> 0.0.1'
 
 gem 'sqlite3'
 
